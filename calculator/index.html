@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="parent">
+        <div class="input"> <input type="text" id="inputField" disabled>
+        </div>
+      <table class="tab">
+        <tr>
+            <td onclick="allClear()">AC</td>
+            <td onclick="singleClear() ">C</td>
+            <td onclick="addingValue('()')">()</td>
+            <td class="qa" onclick="addingValue('/')">%</td>
+        </tr>
+        <tr>
+            <td onclick="addingValue('7')">7</td>
+            <td onclick="addingValue('8')">8</td>
+            <td onclick="addingValue('9')">9</td>
+            <td  class="qa"  onclick="addingValue('*')">X</td>
+        </tr>
+        <tr>
+            <td onclick="addingValue('4')">4</td>
+            <td onclick="addingValue('5')">5</td>
+            <td onclick="addingValue('6')">6</td>
+            <td  class="qa" onclick="addingValue('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="addingValue('1')">1</td>
+            <td onclick="addingValue('2')">2</td>
+            <td onclick="addingValue('3')"> 3</td>
+            <td  class="qa" onclick="addingValue('+')">+</td>
+        </tr>
+        <tr>
+            <td onclick="addingValue('0')">0</td>
+            <td onclick="addingValue('.')">.</td>
+            <td onclick="addingValue('3.175')"> π </td>
+            <td class="qb" onclick="result()">=</td>
+        </tr>
+      </table>
+    </div>
+    
+</body>
+<script src="app.js"></script>
+
+</html>
